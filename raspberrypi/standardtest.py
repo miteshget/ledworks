@@ -5,7 +5,8 @@
 # various animations on a strip of NeoPixels.
 import time
 
-from neopixel import *
+from rpi_ws281x import * 
+# from neopixel import *
 
 
 # LED strip configuration:
