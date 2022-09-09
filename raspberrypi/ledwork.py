@@ -1,7 +1,7 @@
 from rpi_ws281x import * 
 import time
 
-LED_COUNT = 120
+LED_COUNT = 300
 LED_PIN = 18
 LED_FREQ_HZ = 800000
 LED_DMA = 10
@@ -20,10 +20,13 @@ while m < 20:
   for x in range(0, LED_COUNT):
     strip.setPixelColor(x + 1, Color(255,1,1))
     strip.show()
-    time.sleep(.1)
+    # time.sleep(.1)
     strip.setPixelColor(x + 2, Color(1,1,255))
     strip.show()
-    time.sleep(.1)
+    # time.sleep(.1)
     strip.setPixelColor(x + 3, Color(1,255,1))
+    strip.show()
+    for x in range(0, LED_COUNT):
+      strip.setPixelColor(x, Color(0,0,0))
     strip.show()
   m = m+1
