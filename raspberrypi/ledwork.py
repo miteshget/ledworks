@@ -20,12 +20,11 @@ while m < 20:
   for x in range(0, LED_COUNT):
     strip.setPixelColor(x + 1, Color(255,1,1))
     strip.show()
-    # time.sleep(.1)
     strip.setPixelColor(x + 2, Color(1,1,255))
     strip.show()
-    # time.sleep(.1)
     strip.setPixelColor(x + 3, Color(1,255,1))
     strip.show()
+    time.sleep(.1)
     for x in range(0, LED_COUNT):
       strip.setPixelColor(x, Color(0,0,0))
     strip.show()
