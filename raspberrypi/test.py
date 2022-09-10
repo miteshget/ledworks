@@ -72,22 +72,17 @@ def theaterChaseRainbow(strip, wait_ms=50):
 				strip.setPixelColor(i+q, 0)
 
 def fireworks(strip, a, b, c):
-	for i in range(7, 89, 1):
+	for i in range(0, 89, 1):
 		strip.setPixelColor( i , Color(a, b, c))
 		# s_color = round(a * .7),round( b * .7 ),round(c * .7)
 		# strip.setPixelColor( i - 1, Color(s_color[0], s_color[1], s_color[2]))
 		# s_color = round(a * .7),round( b * .7 ),round(c * .7)
 		strip.setPixelColor( i - 1, Color(round(a * .7),round( b * .7 ),round(c * .7)))
-		s_color = round(a * .7 * .7), round(b * .7 * .7), round(c * .7 * .7)
-		strip.setPixelColor( i - 1, Color(s_color[0], s_color[1], s_color[2]))
-		s_color = round(a * .7 * .7 * .7), round(b * .7 * .7 * .7), round(c * .7 * .7 * .7)
-		strip.setPixelColor( i - 1, Color(s_color[0], s_color[1], s_color[2]))
-		s_color = round(a * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7)
-		strip.setPixelColor( i - 1, Color(s_color[0], s_color[1], s_color[2]))
-		s_color = round(a * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7)
-		strip.setPixelColor( i - 1, Color(s_color[0], s_color[1], s_color[2]))
-		s_color = round(a * .7 * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7 * .7)
-		strip.setPixelColor( i - 1, Color(s_color[0], s_color[1], s_color[2]))
+		strip.setPixelColor( i - 1, Color(round(a * .7 * .7), round(b * .7 * .7), round(c * .7 * .7)))
+		strip.setPixelColor( i - 1, Color(round(a * .7 * .7 * .7), round(b * .7 * .7 * .7), round(c * .7 * .7 * .7)))
+		strip.setPixelColor( i - 1, Color(round(a * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7)))
+		strip.setPixelColor( i - 1, Color(round(a * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7)))
+		strip.setPixelColor( i - 1, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7 * .7)))
 		strip.show()
 		strip.setPixelColor( i -7, Color(0,0,0))
 		strip.show()
@@ -102,7 +97,8 @@ if __name__ == '__main__':
 	strip.begin()
 
 	print('Press Ctrl-C to quit.')
-	while True:
+	m = 0
+	while m < 5:
 		fireworks(strip, 0, 0, 255)
 		fireworks(strip, 0, 255, 0)
 		fireworks(strip, 255, 0, 0)
@@ -127,3 +123,4 @@ if __name__ == '__main__':
 		# rainbow(strip)
 		# rainbowCycle(strip)
 		# theaterChaseRainbow(strip)
+		m = m+1
