@@ -74,12 +74,12 @@ def theaterChaseRainbow(strip, wait_ms=50):
 def fireworks(strip, a, b, c):
 	for i in range(7, 89, 1):
 		strip.setPixelColor( i , Color(a, b, c))
-		strip.setPixelColor( i - 1, Color(a * 7, b * 7, c * 7))
-		strip.setPixelColor( i - 2, Color(a * 7 * 7, b * 7 * 7, c * 7 * 7))
-		strip.setPixelColor( i - 3, Color(a * 7 * 7 * 7, b * 7 * 7 * 7, c * 7 * 7 * 7))
-		strip.setPixelColor( i - 4, Color(a * 7 * 7 * 7 * 7, b * 7 * 7 * 7 * 7, c * 7 * 7 * 7 * 7))
-		strip.setPixelColor( i - 5, Color(a * 7 * 7 * 7 * 7 * 7, b * 7 * 7 * 7 * 7 * 7, c * 7 * 7 * 7 * 7 * 7))
-		# strip.setPixelColor( i - 6, Color(a * 7 * 7 * 7 * 7 * 7 * 7, b * 7 * 7 * 7 * 7 * 7 * 7, c * 7 * 7 * 7 * 7 * 7 * 7))
+		strip.setPixelColor( i - 1, Color(round(a * .7), round( b * .7 ), round(c * .7))
+		strip.setPixelColor( i - 2, Color(round(a * .7 * .7), round(b * .7 * .7, round(c * .7 * .7))
+		strip.setPixelColor( i - 3, Color(round(a * .7 * .7 * .7, round(b * .7 * .7 * .7, round(c * .7 * .7 * .7))
+		strip.setPixelColor( i - 4, Color(round(a * .7 * .7 * .7 * .7, round(b * .7 * .7 * .7 * .7, round(c * .7 * .7 * .7 * .7))
+		strip.setPixelColor( i - 5, Color(round(a * .7 * .7 * .7 * .7 * .7, round(b * .7 * .7 * .7 * .7 * .7, round(c * .7 * .7 * .7 * .7 * .7))
+		# strip.setPixelColor( i - 6, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7, round(b * .7 * .7 * .7 * .7 * .7 * .7, round(c * .7 * .7 * .7 * .7 * .7 * .7))
 		strip.show()
 		strip.setPixelColor( i -7, Color(0,0,0))
 		strip.show()
