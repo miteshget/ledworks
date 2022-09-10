@@ -28,6 +28,7 @@ def flare(strip, a, b, c):
 		strip.setPixelColor( i - 5, Color(round(a * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7)))
 		strip.setPixelColor( i - 6, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7 * .7)))
 		strip.show()
+  		time.sleep(1)
 		strip.setPixelColor( i -7, Color(0,0,0))
 		strip.show()
 
@@ -44,6 +45,7 @@ def burst(strip, a, b, c):
 		strip.setPixelColor( i - 8, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(b * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(c * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7)))
 		strip.setPixelColor( i - 9, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(b * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(c * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7)))
 		strip.show()
+  		time.sleep(2)
 		strip.setPixelColor( i -10, Color(0,0,0))
 		strip.show()
 
