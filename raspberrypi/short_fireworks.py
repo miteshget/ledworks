@@ -24,6 +24,7 @@ def flare(strip, a, b, c):
 		for s in range(1,6):
 			strip.setPixelColor(i-s,Color(round(a*pow(.7,s)),round(b*pow(.7,s)),round(c*pow(.7,s))))
 		strip.show()
+		time.sleep(.01)
 		strip.setPixelColor( i -7, Color(0,0,0))
 		strip.show()
 
