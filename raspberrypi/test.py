@@ -110,15 +110,15 @@ if __name__ == '__main__':
 	print('Press Ctrl-C to quit.')
 	m = 0
 	while m < 2:
-		flare(strip, 0, 0, 255)
+		# flare(strip, 0, 0, 255)
 		time.sleep(.1)
 		burst(strip, 0, 0, 255)
 		time.sleep(.1)
-		flare(strip, 0, 255, 0)
+		# flare(strip, 0, 255, 0)
 		time.sleep(.1)
 		burst(strip, 0, 255, 0)
 		time.sleep(.1)
-		flare(strip, 255, 0, 0)
+		# flare(strip, 255, 0, 0)
 		time.sleep(.1)
 		burst(strip, 255, 0, 0)
 		time.sleep(.1)
