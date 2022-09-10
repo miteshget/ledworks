@@ -79,7 +79,7 @@ def fireworks(strip, a, b, c):
 		strip.setPixelColor( i - 3, Color(a * 7 * 7 * 7, b * 7 * 7 * 7, c * 7 * 7 * 7))
 		strip.setPixelColor( i - 4, Color(a * 7 * 7 * 7 * 7, b * 7 * 7 * 7 * 7, c * 7 * 7 * 7 * 7))
 		strip.setPixelColor( i - 5, Color(a * 7 * 7 * 7 * 7 * 7, b * 7 * 7 * 7 * 7 * 7, c * 7 * 7 * 7 * 7 * 7))
-		strip.setPixelColor( i - 6, Color(a * 7 * 7 * 7 * 7 * 7 * 7, b * 7 * 7 * 7 * 7 * 7 * 7, c * 7 * 7 * 7 * 7 * 7 * 7))
+		# strip.setPixelColor( i - 6, Color(a * 7 * 7 * 7 * 7 * 7 * 7, b * 7 * 7 * 7 * 7 * 7 * 7, c * 7 * 7 * 7 * 7 * 7 * 7))
 		strip.show()
 		strip.setPixelColor( i -7, Color(0,0,0))
 		strip.show()
