@@ -71,23 +71,34 @@ def theaterChaseRainbow(strip, wait_ms=50):
 			for i in range(0, strip.numPixels(), 3):
 				strip.setPixelColor(i+q, 0)
 
-def fireworks(strip, a, b, c):
+def flare(strip, a, b, c):
 	for i in range(0, 89, 1):
 		strip.setPixelColor( i , Color(a, b, c))
-		# s_color = round(a * .7),round( b * .7 ),round(c * .7)
-		# strip.setPixelColor( i - 1, Color(s_color[0], s_color[1], s_color[2]))
-		# s_color = round(a * .7),round( b * .7 ),round(c * .7)
 		strip.setPixelColor( i - 1, Color(round(a * .7),round( b * .7 ),round(c * .7)))
-		strip.setPixelColor( i - 1, Color(round(a * .7 * .7), round(b * .7 * .7), round(c * .7 * .7)))
-		strip.setPixelColor( i - 1, Color(round(a * .7 * .7 * .7), round(b * .7 * .7 * .7), round(c * .7 * .7 * .7)))
-		strip.setPixelColor( i - 1, Color(round(a * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7)))
-		strip.setPixelColor( i - 1, Color(round(a * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7)))
-		strip.setPixelColor( i - 1, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7 * .7)))
+		strip.setPixelColor( i - 2, Color(round(a * .7 * .7), round(b * .7 * .7), round(c * .7 * .7)))
+		strip.setPixelColor( i - 3, Color(round(a * .7 * .7 * .7), round(b * .7 * .7 * .7), round(c * .7 * .7 * .7)))
+		strip.setPixelColor( i - 4, Color(round(a * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7)))
+		strip.setPixelColor( i - 5, Color(round(a * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7)))
+		strip.setPixelColor( i - 6, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7 * .7)))
 		strip.show()
 		strip.setPixelColor( i -7, Color(0,0,0))
 		strip.show()
 
-
+def burst(strip, a, b, c):
+	for i in range(90, 119, 1):
+		strip.setPixelColor( i , Color(a, b, c))
+		strip.setPixelColor( i - 1, Color(round(a * .7),round( b * .7 ),round(c * .7)))
+		strip.setPixelColor( i - 2, Color(round(a * .7 * .7), round(b * .7 * .7), round(c * .7 * .7)))
+		strip.setPixelColor( i - 3, Color(round(a * .7 * .7 * .7), round(b * .7 * .7 * .7), round(c * .7 * .7 * .7)))
+		strip.setPixelColor( i - 4, Color(round(a * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7)))
+		strip.setPixelColor( i - 5, Color(round(a * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7)))
+		strip.setPixelColor( i - 6, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7 * .7)))
+		strip.setPixelColor( i - 7, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(b * .7 * .7 * .7 * .7 * .7 * .7 * .7),round( c * .7 * .7 * .7 * .7 * .7 * .7 * .7)))
+		strip.setPixelColor( i - 8, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(b * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(c * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7)))
+		strip.setPixelColor( i - 9, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(b * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(c * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7))))
+		strip.show()
+		strip.setPixelColor( i -10, Color(0,0,0))
+		strip.show()
 
 # Main program logic follows:
 if __name__ == '__main__':
@@ -98,16 +109,24 @@ if __name__ == '__main__':
 
 	print('Press Ctrl-C to quit.')
 	m = 0
-	while m < 5:
-		fireworks(strip, 0, 0, 255)
-		fireworks(strip, 0, 255, 0)
-		fireworks(strip, 255, 0, 0)
-		fireworks(strip, 0, 255, 255)
-		fireworks(strip, 255, 0, 255)
-		fireworks(strip, 255, 250, 0)
-		fireworks(strip, 50, 255, 255)
-		fireworks(strip, 255, 50, 150)
-		fireworks(strip, 255, 250, 50)
+	while m < 2:
+		flare(strip, 0, 0, 255)
+		burst(strip, 0, 0, 255)
+		flare(strip, 0, 255, 0)
+		burst(strip, 0, 255, 0)
+		flare(strip, 255, 0, 0)
+		burst(strip, 255, 0, 0)
+		flare(strip, 0, 255, 255)
+		burst(strip, 255, 0, 255)
+		flare(strip, 255, 0, 255)
+		burst(strip, 255, 250, 0)
+		flare(strip, 255, 250, 0)
+		burst(strip, 50, 255, 255)
+		flare(strip, 50, 255, 255)
+		burst(strip, 255, 50, 150)
+		flare(strip, 255, 50, 150)
+		burst(strip, 255, 250, 50)
+		flare(strip, 255, 250, 50)
 
 		# colorWipe(strip, Color(255, 0, 0))  # Red wipe
 		# colorWipe(strip, Color(0, 255, 0))  # Blue wipe
@@ -123,4 +142,4 @@ if __name__ == '__main__':
 		# rainbow(strip)
 		# rainbowCycle(strip)
 		# theaterChaseRainbow(strip)
-		m = m+1
+		m += 1
