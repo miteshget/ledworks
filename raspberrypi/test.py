@@ -71,7 +71,7 @@ def theaterChaseRainbow(strip, wait_ms=50):
 			for i in range(0, strip.numPixels(), 3):
 				strip.setPixelColor(i+q, 0)
 
-def fireworks(strip, a, b, c, wait_ms=50,):
+def fireworks(strip, a, b, c):
 	for i in range(7, 89, 1):
 		strip.setPixelColor( i , Color(a, b, c))
 		strip.setPixelColor( i - 1, Color(a * .7, b * .7, c * .7))
@@ -96,24 +96,24 @@ if __name__ == '__main__':
 	print('Press Ctrl-C to quit.')
 	while True:
 		fireworks(strip, 255, 0, 0)  # Red wipe
-		fireworks(strip, 0, 0, 255)
-		fireworks(strip, 0, 0, 255)
-		fireworks(strip, 0, 255, 0)
-		fireworks(strip, 0, 255, 0)
-		fireworks(strip, 255, 0, 0)
-		fireworks(strip, 255, 0, 0)
-		fireworks(strip, 0, 255, 255)
-		fireworks(strip, 0, 255, 255)
-		fireworks(strip, 255, 0, 255)
-		fireworks(strip, 255, 0, 255)
-		fireworks(strip, 255, 250, 0)
-		fireworks(strip, 255, 250, 0)
-		fireworks(strip, 50, 255, 255)
-		fireworks(strip, 50, 255, 255)
-		fireworks(strip, 255, 50, 150)
-		fireworks(strip, 255, 50, 150)
-		fireworks(strip, 255, 250, 50)
-		fireworks(strip, 255, 250, 50)
+		# fireworks(strip, Color(0, 0, 255))
+		# fireworks(strip, Color(0, 0, 255))
+		# fireworks(strip, Color(0, 255, 0))
+		# fireworks(strip, Color(0, 255, 0))
+		# fireworks(strip, Color(255, 0, 0))
+		# fireworks(strip, Color(255, 0, 0))
+		# fireworks(strip, Color(0, 255, 255))
+		# fireworks(strip, Color(0, 255, 255))
+		# fireworks(strip, Color(255, 0, 255))
+		# fireworks(strip, Color(255, 0, 255))
+		# fireworks(strip, Color(255, 250, 0))
+		# fireworks(strip, Color(255, 250, 0))
+		# fireworks(strip, Color(50, 255, 255))
+		# fireworks(strip, Color(50, 255, 255))
+		# fireworks(strip, Color(255, 50, 150))
+		# fireworks(strip, Color(255, 50, 150))
+		# fireworks(strip, Color(255, 250, 50))
+		# fireworks(strip, Color(255, 250, 50))
 		# colorWipe(strip, Color(255, 0, 0))  # Red wipe
 		# colorWipe(strip, Color(0, 255, 0))  # Blue wipe
 		# colorWipe(strip, Color(0, 0, 255))  # Green wipe
