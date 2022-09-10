@@ -45,7 +45,7 @@ def burst(strip, a, b, c):
 		strip.setPixelColor( i - 8, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(b * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(c * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7)))
 		strip.setPixelColor( i - 9, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(b * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(c * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7)))
 		strip.show()
-		time.sleep(.20)
+		time.sleep(.01)
 		strip.setPixelColor( i -10, Color(0,0,0))
 		strip.show()
 
