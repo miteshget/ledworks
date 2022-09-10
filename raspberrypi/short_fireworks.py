@@ -55,4 +55,6 @@ if __name__ == '__main__':
 		main()
 	except KeyboardInterrupt:
 		print('Interrupted')
+		strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS)
+		strip.begin()
 		clean(strip)
