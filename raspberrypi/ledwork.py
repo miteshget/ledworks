@@ -31,3 +31,6 @@ while m < 20:
       strip.setPixelColor(x, Color(0,0,0))
     strip.show()
   m = m+1
+  
+  
+    
