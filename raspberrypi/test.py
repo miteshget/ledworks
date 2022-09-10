@@ -95,7 +95,7 @@ def burst(strip, a, b, c):
 		strip.setPixelColor( i - 6, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7 * .7)))
 		strip.setPixelColor( i - 7, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(b * .7 * .7 * .7 * .7 * .7 * .7 * .7),round( c * .7 * .7 * .7 * .7 * .7 * .7 * .7)))
 		strip.setPixelColor( i - 8, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(b * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(c * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7)))
-		strip.setPixelColor( i - 9, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(b * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(c * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7))))
+		strip.setPixelColor( i - 9, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(b * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(c * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7)))
 		strip.show()
 		strip.setPixelColor( i -10, Color(0,0,0))
 		strip.show()
