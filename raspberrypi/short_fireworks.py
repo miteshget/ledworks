@@ -13,7 +13,6 @@ LED_BRIGHTNESS = 255     # Set to 0 for darkest and 255 for brightest
 LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
 LED_CHANNEL = 0
 
-
 def clean(strip):
 	for x in range(0, LED_COUNT):
 		strip.setPixelColor(x, Color(0,0,0))
@@ -37,10 +36,9 @@ def burst(strip, a, b, c):
 		time.sleep(.01)
 		strip.setPixelColor( i -10, Color(0,0,0))
 		strip.show()
-		
-# Main program logic follows:
-if __name__ == '__main__':
-	# Create NeoPixel object with appropriate configuration.
+
+# Main program logic follows:	
+def main():
 	strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS)
 	strip.begin()
 	print('Press Ctrl-C to quit.')
@@ -50,5 +48,11 @@ if __name__ == '__main__':
 			flare(strip,x[0],x[1],x[2])
 			clean(strip)
 			burst(strip,x[0],x[1],x[2])
-			clean(strip)
-  
+			clean(strip)	
+
+if __name__ == '__main__':
+	try:
+		main()
+	except KeyboardInterrupt:
+		print('Interrupted')
+		clean(strip)
