@@ -95,8 +95,6 @@ if __name__ == '__main__':
 
 	print('Press Ctrl-C to quit.')
 	while True:
-		fireworks(strip, 255, 0, 0)  # Red wipe
-		fireworks(strip, 0, 0, 255)
 		fireworks(strip, 0, 0, 255)
 		fireworks(strip, 0, 255, 0)
 		fireworks(strip, 255, 0, 0)
