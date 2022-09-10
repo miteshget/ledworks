@@ -71,7 +71,7 @@ def theaterChaseRainbow(strip, wait_ms=50):
 			for i in range(0, strip.numPixels(), 3):
 				strip.setPixelColor(i+q, 0)
 
-def fireworks(strip, a, b, intc):
+def fireworks(strip, a, b, c):
 	for i in range(7, 89, 1):
 		strip.setPixelColor( i , Color(a, b, c))
 		strip.setPixelColor( i - 1, Color(a * 7, b * 7, c * 7))
