@@ -16,7 +16,7 @@ LED_CHANNEL = 0
 def clean(strip):
 	for x in range(0, LED_COUNT):
 		strip.setPixelColor(x, Color(0,0,0))
-		strip.show()
+	strip.show()
 
 def flare(strip, a, b, c):
 	for i in range(0, 89, 1):
@@ -28,7 +28,7 @@ def flare(strip, a, b, c):
 		strip.setPixelColor( i - 5, Color(round(a * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7)))
 		strip.setPixelColor( i - 6, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7), round(b * .7 * .7 * .7 * .7 * .7 * .7), round(c * .7 * .7 * .7 * .7 * .7 * .7)))
 		strip.show()
-		time.sleep(1)
+		# time.sleep(1)
 		strip.setPixelColor( i -7, Color(0,0,0))
 		strip.show()
 
@@ -45,7 +45,7 @@ def burst(strip, a, b, c):
 		strip.setPixelColor( i - 8, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(b * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(c * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7)))
 		strip.setPixelColor( i - 9, Color(round(a * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(b * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7),round(c * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7 * .7)))
 		strip.show()
-		time.sleep(2)
+		time.sleep(20/1000)
 		strip.setPixelColor( i -10, Color(0,0,0))
 		strip.show()
 
