@@ -74,8 +74,10 @@ def theaterChaseRainbow(strip, wait_ms=50):
 def fireworks(strip, a, b, c):
 	for i in range(7, 89, 1):
 		strip.setPixelColor( i , Color(a, b, c))
-		s_color = round(a * .7),round( b * .7 ),round(c * .7)
-		strip.setPixelColor( i - 1, Color(s_color[0], s_color[1], s_color[2]))
+		# s_color = round(a * .7),round( b * .7 ),round(c * .7)
+		# strip.setPixelColor( i - 1, Color(s_color[0], s_color[1], s_color[2]))
+		# s_color = round(a * .7),round( b * .7 ),round(c * .7)
+		strip.setPixelColor( i - 1, Color(round(a * .7),round( b * .7 ),round(c * .7)))
 		s_color = round(a * .7 * .7), round(b * .7 * .7), round(c * .7 * .7)
 		strip.setPixelColor( i - 1, Color(s_color[0], s_color[1], s_color[2]))
 		s_color = round(a * .7 * .7 * .7), round(b * .7 * .7 * .7), round(c * .7 * .7 * .7)
