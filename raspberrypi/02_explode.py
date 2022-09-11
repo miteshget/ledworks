@@ -50,7 +50,7 @@ def flare(strip, a, b, c):
 		strip.show()
 
 
-def flare1():
+def flare1(strip):
     flarePos = 0
     flareVel = float(random.getrandbits(16)) / 90
 	# flareVel = float(random16(60, 80)) / 90
