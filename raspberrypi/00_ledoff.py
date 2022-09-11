@@ -1,3 +1,10 @@
+# Author: Mitesh Sharma (mitsharm@redhat.com)
+# Name: WS281b IC LED Turn Off
+# Version: 1.0
+# Description: Turn off addressable LED strip - raspberrypi
+# Program: Python3
+# Library: rpi_ws281x
+
 from rpi_ws281x import * 
 import time
 
