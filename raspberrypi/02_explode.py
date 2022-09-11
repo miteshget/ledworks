@@ -71,7 +71,7 @@ def flare1(strip, a, b, c):
             color_code = ((0,0,255),(0,255,0),(255,0,0),(0,255,255),(255,0,255),(255,250,0),(50,255,255),(255,50,150),(255,250,50))
             for x in color_code:
                 flare1(strip,x[0],x[1],x[2])
-                clean(strip)
+                # clean(strip)
             # leds[int(sparkPos[i])] = HeatColor(sparkCol[i])
             # leds[int(sparkPos[i])] %= 50;
         strip.setPixelColor(round(flarePos), Color(0,0,round(brightness * 255)))
