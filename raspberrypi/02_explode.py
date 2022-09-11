@@ -68,17 +68,17 @@ def flare1(strip, a, b, c):
             sparkVel[i] += gravity
             sparkCol[i] += -.8
             sparkCol[i] = constrain(sparkCol[i], 0, 255)
-			for s in range(1,6):
-				strip.setPixelColor(i-s,Color(round(a*pow(.7,s)),round(b*pow(.7,s)),round(c*pow(.7,s))))
+            
+            s=1
+            strip.setPixelColor(i-s,Color(round(a*pow(.7,s)),round(b*pow(.7,s)),round(c*pow(.7,s))))
             # leds[int(sparkPos[i])] = HeatColor(sparkCol[i])
             # leds[int(sparkPos[i])] %= 50;
-
-		strip.setPixelColor(round(flarePos), Color(0,0,round(brightness * 255)))
-		strip.show()
-		clean(strip)
-		flarePos += flareVel
-		flareVel += gravity
-		brightness *= .99
+        strip.setPixelColor(round(flarePos), Color(0,0,round(brightness * 255)))
+        strip.show()
+        clean(strip)
+        flarePos += flareVel
+        flareVel += gravity
+        brightness *= .99
 
 
 
