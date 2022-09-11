@@ -72,7 +72,7 @@ def flare1(strip):
             # leds[int(sparkPos[i])] = HeatColor(sparkCol[i])
             # leds[int(sparkPos[i])] %= 50; 
 
-        strip.setPixelColor(round(flarePos), Color(0,0,round(brightness * 255))
+        strip.setPixelColor(round(flarePos), Color(0,0,round(brightness * 255)))
         strip.show()
         clean(strip)
         flarePos += flareVel
