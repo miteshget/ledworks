@@ -50,7 +50,7 @@ def flare(strip, a, b, c):
 		strip.show()
 
 
-def flare1(strip):
+def flare1(strip, a, b, c):
     flarePos = 0
     flareVel = float(random.getrandbits(16)) / 90
 	# flareVel = float(random16(60, 80)) / 90
@@ -68,16 +68,17 @@ def flare1(strip):
             sparkVel[i] += gravity
             sparkCol[i] += -.8
             sparkCol[i] = constrain(sparkCol[i], 0, 255)
-            # strip.setPixelColor(i-s,Color(round(a*pow(.7,s)),round(b*pow(.7,s)),round(c*pow(.7,s))))
+			for s in range(1,6):
+				strip.setPixelColor(i-s,Color(round(a*pow(.7,s)),round(b*pow(.7,s)),round(c*pow(.7,s))))
             # leds[int(sparkPos[i])] = HeatColor(sparkCol[i])
-            # leds[int(sparkPos[i])] %= 50; 
+            # leds[int(sparkPos[i])] %= 50;
 
-        strip.setPixelColor(round(flarePos), Color(0,0,round(brightness * 255)))
-        strip.show()
-        clean(strip)
-        flarePos += flareVel
-        flareVel += gravity
-        brightness *= .99
+		strip.setPixelColor(round(flarePos), Color(0,0,round(brightness * 255)))
+		strip.show()
+		clean(strip)
+		flarePos += flareVel
+		flareVel += gravity
+		brightness *= .99
 
 
 
@@ -104,7 +105,7 @@ def main():
 	color_code = ((0,0,255),(0,255,0),(255,0,0),(0,255,255),(255,0,255),(255,250,0),(50,255,255),(255,50,150),(255,250,50))
 	while True:
 		for x in color_code:
-			flare1(strip)
+			flare1(stripx[0],x[1],x[2])
 			clean(strip)
 			burst(strip,x[0],x[1],x[2])
 			clean(strip)	
