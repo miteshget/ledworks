@@ -105,7 +105,7 @@ def main():
 	color_code = ((0,0,255),(0,255,0),(255,0,0),(0,255,255),(255,0,255),(255,250,0),(50,255,255),(255,50,150),(255,250,50))
 	while True:
 		for x in color_code:
-			flare1(stripx[0],x[1],x[2])
+			flare1(strip,x[0],x[1],x[2])
 			clean(strip)
 			burst(strip,x[0],x[1],x[2])
 			clean(strip)	
