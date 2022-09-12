@@ -55,16 +55,24 @@ def poleflagpart(strip):
 def green(strip, a, b, c):
 	for i in range(90, 99, 1):
 		strip.setPixelColor( i , Color(a, b, c))
+		for s in range(1,3):
+			strip.setPixelColor(i-s,Color(round(a*pow(.7,s)),round(b*pow(.7,s)),round(c*pow(.7,s))))
 		strip.show()
+
 
 def white(strip, a, b, c):
 	for i in range(99, 109, 1):
 		strip.setPixelColor( i , Color(a, b, c))
+		for s in range(1,3):
+			strip.setPixelColor(i-s,Color(round(a*pow(.7,s)),round(b*pow(.7,s)),round(c*pow(.7,s))))
 		strip.show()
+
   
 def saffron(strip, a, b, c):
 	for i in range(109, 119, 1):
 		strip.setPixelColor( i , Color(a, b, c))
+		for s in range(1,3):
+			strip.setPixelColor(i-s,Color(round(a*pow(.7,s)),round(b*pow(.7,s)),round(c*pow(.7,s))))
 		strip.show()
 
 
