@@ -43,11 +43,11 @@ def explode0(strip, color, wait_ms=50, iterations=10):
      
 		for q in range(3):
 			m = random.randrange(strip.numPixels())
-			for i in range(0, strip.numPixels(), 3):
+			for i in range(0, 3, 1):
 				strip.setPixelColor(i+m, color)
 			strip.show()
 			time.sleep(wait_ms/1000.0)
-			for i in range(0, strip.numPixels(), 3):
+			for i in range(0, 3, 1):
 				strip.setPixelColor(i+m, 0)
 			strip.show()
 
