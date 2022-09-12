@@ -85,8 +85,11 @@ def main():
 		saffron(strip,	255, 165, 0)
 		time.sleep(10)
 		saffron(strip,0,0,0)
+		time.sleep(1)
 		white(strip,0,0,0)
+		time.sleep(1)
 		green(strip,0, 0, 0)
+		time.sleep(1)
 		clean(strip)	
 
 if __name__ == '__main__':
