@@ -79,7 +79,7 @@ def main():
 	while True:
 		pole(strip,255, 165, 0)
 		clean(strip)
-		poleflagpart(strip)
+		# poleflagpart(strip)
 		green(strip,0, 255, 0)
 		white(strip,255, 255, 255)
 		saffron(strip,	255, 165, 0)
@@ -91,6 +91,7 @@ def main():
 		green(strip,0, 0, 0)
 		time.sleep(1)
 		clean(strip)	
+		time.sleep(2)
 
 if __name__ == '__main__':
 	try:
