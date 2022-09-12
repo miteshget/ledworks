@@ -53,7 +53,7 @@ def main():
 		pole(strip,0,0,139)
 		green(strip,0, 255, 0)
 		white(strip,255, 255, 255)
-		saffron(strip,244, 196, 48)
+		saffron(strip,	255, 165, 0)
 		time.sleep(1)
 		clean(strip)	
 
