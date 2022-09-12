@@ -28,7 +28,7 @@ def pole(strip, a, b, c):
 		strip.setPixelColor( i , Color(0, 255, 0))
 		strip.show()
 
-def poleflagpart(strip, a, b, c):
+def poleflagpart(strip):
 	for saffron in range(60, 69, 1):
 		strip.setPixelColor( saffron , Color(255, 165, 0))
 		strip.show()
