@@ -71,7 +71,8 @@ def main():
 	strip.begin()
 	print('Press Ctrl-C to quit.')
 	while True:
-		pole(strip,0,0,139)
+		pole(strip,255, 165, 0)
+		clean(strip)
 		poleflagpart(strip)
 		green(strip,0, 255, 0)
 		white(strip,255, 255, 255)
