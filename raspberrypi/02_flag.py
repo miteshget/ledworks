@@ -53,6 +53,7 @@ def green(strip, a, b, c):
 		for s in range(1,3):
 			strip.setPixelColor(i-s,Color(round(a*pow(.7,s)),round(b*pow(.7,s)),round(c*pow(.7,s))))
 		strip.show()
+		time.sleep(.25)
 
 
 def white(strip, a, b, c):
@@ -61,6 +62,7 @@ def white(strip, a, b, c):
 		for s in range(1,3):
 			strip.setPixelColor(i-s,Color(round(a*pow(.7,s)),round(b*pow(.7,s)),round(c*pow(.7,s))))
 		strip.show()
+		time.sleep(.25)
 
   
 def saffron(strip, a, b, c):
@@ -69,6 +71,7 @@ def saffron(strip, a, b, c):
 		for s in range(1,3):
 			strip.setPixelColor(i-s,Color(round(a*pow(.7,s)),round(b*pow(.7,s)),round(c*pow(.7,s))))
 		strip.show()
+		time.sleep(.25)
 
 
 # Main program logic follows:	
