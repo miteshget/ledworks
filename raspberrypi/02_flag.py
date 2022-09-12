@@ -28,12 +28,12 @@ def pole(strip, a, b, c):
 		strip.setPixelColor( i , Color(a, b, c))
 		strip.show()
 
-def white(strip, a, b, c):
+def green(strip, a, b, c):
 	for i in range(90, 99, 1):
 		strip.setPixelColor( i , Color(a, b, c))
 		strip.show()
 
-def green(strip, a, b, c):
+def white(strip, a, b, c):
 	for i in range(99, 109, 1):
 		strip.setPixelColor( i , Color(a, b, c))
 		strip.show()
@@ -50,7 +50,7 @@ def main():
 	strip.begin()
 	print('Press Ctrl-C to quit.')
 	while True:
-		pole(strip,0,0,0)
+		pole(strip,0,0,139)
 		green(strip,0, 255, 0)
 		white(strip,255, 255, 255)
 		saffron(strip,244, 196, 48)
