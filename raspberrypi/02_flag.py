@@ -62,6 +62,7 @@ def main():
 	print('Press Ctrl-C to quit.')
 	while True:
 		pole(strip,0,0,139)
+		poleflagpart(strip)
 		green(strip,0, 255, 0)
 		white(strip,255, 255, 255)
 		saffron(strip,	255, 165, 0)
