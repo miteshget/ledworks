@@ -31,22 +31,22 @@ def theaterChase(strip, color, wait_ms=50, iterations=10):
 	"""Movie theater light style chaser animation."""
 	for j in range(iterations):
 		for q in range(3):
-			for i in range(90, strip.numPixels(), 3):
+			for i in range(0, strip.numPixels(), 3):
 				strip.setPixelColor(i+q, color)
 			strip.show()
 			time.sleep(wait_ms/1000.0)
-			for i in range(90, strip.numPixels(), 3):
+			for i in range(0, strip.numPixels(), 3):
 				strip.setPixelColor(i+q, 0)
     
 def explode0(strip, color, wait_ms=50, iterations=10):
 	for q in range(3):
 		m = random.randrange(strip.numPixels())
 		for i in range(0, 6, 1):
-			strip.setPixelColor(i+m, color)
+			strip.setPixelColor(89+i+m, color)
 		strip.show()
 		time.sleep(.30)
 		for i in range(0, 6, 1):
-			strip.setPixelColor(i+m, 0)
+			strip.setPixelColor(89+i+m, 0)
 		strip.show()
 
 def wheel(pos):
