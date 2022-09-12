@@ -50,13 +50,12 @@ def main():
 	strip.begin()
 	print('Press Ctrl-C to quit.')
 	while True:
-		for x in color_code:
-			pole(strip,x[0],x[1],x[2])
-			green(strip,0, 255, 0)
-			white(strip,255, 255, 255)
-			saffron(strip,244, 196, 48)
-			time.sleep(1)
-			clean(strip)	
+		pole(strip,x[0],x[1],x[2])
+		green(strip,0, 255, 0)
+		white(strip,255, 255, 255)
+		saffron(strip,244, 196, 48)
+		time.sleep(1)
+		clean(strip)	
 
 if __name__ == '__main__':
 	try:
