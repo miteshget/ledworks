@@ -24,7 +24,7 @@ def clean(strip):
 	strip.show()
 
 def pole(strip, a, b, c):
-	for i in range(0, 59, 1):
+	for i in range(0, 89, 1):
 		strip.setPixelColor( i , Color(a, b, c))
 		for s in range(1,6):
 			strip.setPixelColor(i-s,Color(round(a*pow(.7,s)),round(b*pow(.7,s)),round(c*pow(.7,s))))
