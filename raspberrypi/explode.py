@@ -39,15 +39,23 @@ def theaterChase(strip, color, wait_ms=50, iterations=10):
 				strip.setPixelColor(i+q, 0)
     
 def explode0(strip, color, wait_ms=50, iterations=10):
-	for q in range(3):
+	for q in (range(5,-1,-1)):
 		m = random.randrange(strip.numPixels())
-		for i in range(0, 6, 1):
-			strip.setPixelColor(89+i+m, color)
+		for s in range(1,q):
+			strip.setPixelColor(i-s,Color(round(a*pow(.7,s)),round(b*pow(.7,s)),round(c*pow(.7,s))))
 		strip.show()
-		time.sleep(wait_ms/1000.0)
-		for i in range(0, 6, 1):
-			strip.setPixelColor(89+i+m, 0)
+		for s in range(1,q):
+			strip.setPixelColor(i-s,0)
 		strip.show()
+		# for i in range(0, 6, 1):
+		# 	strip.setPixelColor(89+i+m, color)
+		# strip.show()
+		# time.sleep(wait_ms/1000.0)
+		# for i in range(0, 6, 1):
+		# 	strip.setPixelColor(89+i+m, 0)
+		# strip.show()
+  		# strip.setPixelColor( i , Color(a, b, c))
+
 
 def wheel(pos):
 	"""Generate rainbow colors across 0-255 positions."""
