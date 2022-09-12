@@ -87,14 +87,12 @@ def main():
 		white(strip,255, 255, 255)
 		saffron(strip,	255, 165, 0)
 		time.sleep(10)
-		saffron(strip,0,0,0)
+		green(strip,0, 0, 0)
 		time.sleep(1)
 		white(strip,0,0,0)
 		time.sleep(1)
-		green(strip,0, 0, 0)
+		saffron(strip,0,0,0)
 		time.sleep(1)
-		clean(strip)	
-		time.sleep(2)
 
 if __name__ == '__main__':
 	try:
