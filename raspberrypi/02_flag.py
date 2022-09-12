@@ -24,10 +24,21 @@ def clean(strip):
 	strip.show()
 
 def pole(strip, a, b, c):
-	for i in range(0, 89, 1):
-		strip.setPixelColor( i , Color(a, b, c))
+	for i in range(0, 59, 1):
+		strip.setPixelColor( i , Color(0, 255, 0))
 		strip.show()
 
+def poleflagpart(strip, a, b, c):
+	for saffron in range(60, 69, 1):
+		strip.setPixelColor( saffron , Color(255, 165, 0))
+		strip.show()
+	for white in range(69, 79, 1):
+		strip.setPixelColor( white , Color(255, 255, 255))
+		strip.show()
+	for green in range(79, 89, 1):
+		strip.setPixelColor( green , Color())
+		strip.show()
+  
 def green(strip, a, b, c):
 	for i in range(90, 99, 1):
 		strip.setPixelColor( i , Color(a, b, c))
@@ -54,7 +65,7 @@ def main():
 		green(strip,0, 255, 0)
 		white(strip,255, 255, 255)
 		saffron(strip,	255, 165, 0)
-		time.sleep(1)
+		time.sleep(10)
 		clean(strip)	
 
 if __name__ == '__main__':
