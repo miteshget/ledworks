@@ -50,7 +50,7 @@ def main():
 	strip.begin()
 	print('Press Ctrl-C to quit.')
 	while True:
-		pole(strip,x[0],x[1],x[2])
+		pole(strip,0,0,0)
 		green(strip,0, 255, 0)
 		white(strip,255, 255, 255)
 		saffron(strip,244, 196, 48)
