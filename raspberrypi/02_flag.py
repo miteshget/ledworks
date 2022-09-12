@@ -25,7 +25,7 @@ def clean(strip):
 
 def pole(strip, a, b, c):
 	for i in range(0, 59, 1):
-		strip.setPixelColor( i , Color(0, 255, 0))
+		strip.setPixelColor( i , Color(a,b,c))
 		strip.show()
 
 def poleflagpart(strip):
@@ -36,7 +36,7 @@ def poleflagpart(strip):
 		strip.setPixelColor( white , Color(255, 255, 255))
 		strip.show()
 	for green in range(79, 89, 1):
-		strip.setPixelColor( green , Color())
+		strip.setPixelColor( green , Color(0, 255, 0))
 		strip.show()
   
 def green(strip, a, b, c):
